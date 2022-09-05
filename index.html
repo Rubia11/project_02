@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <p>
@@ -13,12 +14,20 @@
         git status查看仓库命令
         git status -s以简写方式查看状态
         绿色大A表示新添加到暂存区
-        两个红色问号表示被跟踪
+        两个红色问号表示【未】被跟踪
         我来修改一下啦
 
         注意
         红色modified表示已修改未提交到暂存区
         绿色modefied表示已修改但是未提交到暂存区
+
+        撤销 git checkout -- index.html //注意减号与文件名之间必须有空格
+        提交多个已修改或新增文件到暂存区 git add . 
+
+        从暂存区移除文件
+        get reset HEAD 要移除的文件的名字
     </p>
+
+    <script src="./index.js"></script>
 </body>
 </html>
